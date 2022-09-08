@@ -1,0 +1,16 @@
+use db_students;
+
+-- Создание таблицы Студенты
+CREATE TABLE `db_students`.`students` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` NVARCHAR(150) NOT NULL,
+  `mark` INT NOT NULL,
+  PRIMARY KEY (`id`));
+
+-- Запросы просмотра и очистки данных
+use db_students;
+
+select *
+from students;
+
+truncate students;
